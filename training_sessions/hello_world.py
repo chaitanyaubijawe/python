@@ -43,3 +43,22 @@ class Basic:
 		print("basic m1")
 b =  Basic();
 b.m1()
+
+
+
+a = 5
+b = 6
+
+c = "string " + 5
+
+add = c + str(a)
+
+
+print("concatinating string with number :: ", add)
+
+print("Mitesh :", a , b)
+print("Mitesh :" +  str(a))
+
+
+print("Type of a data type :: class :: ", type(a))
+print("Hash code is :: ", id(a))
