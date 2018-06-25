@@ -47,7 +47,7 @@ def get_city_list_by_state(arg=None):
 
 def populat_map_data():
 	map = {}
-	
+
 	mah_list = get_city_list_by_state('MAH')
 	mp_list = get_city_list_by_state('MP')
 
