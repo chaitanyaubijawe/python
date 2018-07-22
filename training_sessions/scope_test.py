@@ -41,33 +41,66 @@ def parent_method_keyword(arg):
 #print("Golbal W_map :: ", w_map)
 parent_method_keyword("this is argument...")
 #print("Global keyword.... W_map :: ", w_map)
-# city_1 = "city_1"
-# city_2 = "city_2"
-# city_3 = "city_3"
-# cities = []
-# userInput = 5
-# for number in range(userInput):
-#     city = state_name + "_" + str(number)
-#     print("generated city is :: ", city)
-#     cities.append(city)
-#
-# for city in cities:
-#     print("City inside list is ", city)
-
-def populate_and_get_city_by_state(state_name, range_value):
-    cities = []
-
-    for number in range(range_value ):
-        city = state_name + "_" + str(number)
-        print("generated city is :: ", city)
-        cities.append(city)
-    return cities
-
-cities = populate_and_get_city_by_state("Mah", 30)
-
-for city in cities:
-    print("City inside list is ", city)
-insert_query = "INSERT INTO student(id, name, age) VALUES (1,'{}', 1)".format("name_1"
+##################################################
 
 
-print (insert_query)
+
+
+
+
+
+
+
+
+
+
+world_map = {}
+
+def world_map_creator():
+    #world_map = {}
+    def create_country_map():
+        world_map = {}
+        world_map["IND"] = {}
+        print("Inside create_country_map ")
+
+    def create_state_map():
+        global world_map
+        world_map["US"] = {}
+        print("global variable")
+
+    create_country_map()
+    print ("After modifying into create_country_map", world_map)
+    create_state_map()
+    print ("After modifying into create_state_map", world_map)
+
+
+world_map_creator()
+print("Global map :: ", world_map)
+
+
+import logging
+
+FORMAT = '%(asctime)-15s %(filename)-5s %(funcName)-5s %(message)s'
+logging.basicConfig(format=FORMAT, level="DEBUG")
+logger = logging.getLogger("scope.test")
+logger2 = logging.getLogger("scope.test")
+# logger.setLevel("DEBUG")
+logger.setLevel("INFO")
+print(id(logger))
+print(id(logger2))
+logger.warning("hello")
+logger.error("hello")
+logger.debug("debug message....")
+
+def print_something():
+    logger = logging.getLogger("scope.test")
+    print(id(logger))
+    logger.info("info message....")
+
+print_something()
+
+# 4334185720
+# 4334185720
+# 2018-07-22 12:58:19,976 hello
+# 2018-07-22 12:58:19,976 hello
+# 4334185720
