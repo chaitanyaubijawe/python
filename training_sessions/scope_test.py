@@ -1,32 +1,32 @@
 def parent_method(arg):
-
     def m1():
         print("Inside m1 :: ", arg)
+
     def m2():
         print("inside m2 :: ", arg)
 
     m1()
     m2()
 
-#parent_method("this is argument...")
+
+# parent_method("this is argument...")
 
 
 w_map = "this is global"
 
-def parent_method_keyword(arg):
 
+def parent_method_keyword(arg):
     def m0():
         # method local variable.....
         w_map = "Method local variable..."
 
     def m1():
-        #nonlocal w_map
+        # nonlocal w_map
         w_map = "non local scope assigning inside method...."
 
     def m2():
         global w_map
         w_map = "global scope is assinged....."
-
 
     # w_map = "This is method variable"
     # print("before W_map :: ", w_map)
@@ -38,26 +38,18 @@ def parent_method_keyword(arg):
     m2()
     print("after assigning value with global keyword.... W_map :: ", w_map)
 
-#print("Golbal W_map :: ", w_map)
+
+# print("Golbal W_map :: ", w_map)
 parent_method_keyword("this is argument...")
-#print("Global keyword.... W_map :: ", w_map)
+# print("Global keyword.... W_map :: ", w_map)
 ##################################################
-
-
-
-
-
-
-
-
-
-
 
 
 world_map = {}
 
+
 def world_map_creator():
-    #world_map = {}
+    # world_map = {}
     def create_country_map():
         world_map = {}
         world_map["IND"] = {}
@@ -69,14 +61,13 @@ def world_map_creator():
         print("global variable")
 
     create_country_map()
-    print ("After modifying into create_country_map", world_map)
+    print("After modifying into create_country_map", world_map)
     create_state_map()
-    print ("After modifying into create_state_map", world_map)
+    print("After modifying into create_state_map", world_map)
 
 
 world_map_creator()
 print("Global map :: ", world_map)
-
 
 import logging
 
@@ -92,10 +83,12 @@ logger.warning("hello")
 logger.error("hello")
 logger.debug("debug message....")
 
+
 def print_something():
     logger = logging.getLogger("scope.test")
     print(id(logger))
     logger.info("info message....")
+
 
 print_something()
 
