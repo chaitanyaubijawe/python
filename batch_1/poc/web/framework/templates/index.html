@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Flask App</title>
+    <script>
+
+        function getData() {
+            var data = null;
+
+            var xhr = new XMLHttpRequest();
+            xhr.withCredentials = true;
+
+            xhr.addEventListener("readystatechange", function () {
+                if (this.readyState === 4) {
+                    console.log(this.responseText);
+
+                    document.getElementById("data").innerHTML = this.responseText;
+                }
+            });
+
+            xhr.open("GET", "/hi/mitesh");
+            xhr.setRequestHeader("Cache-Control", "no-cache");
+            xhr.setRequestHeader("Postman-Token", "95495de1-1883-8e4a-0552-6314713721a8");
+
+            xhr.send(data);
+        }
+
+    </script>
+</head>
+<body>
+
+Hi this is a flask APP
+<br>
+<br>
+<br>
+Data Will come here:: <br>
+
+
+<div id="data">
+
+</div>
+
+
+<button onclick="getData()">GET DATA</button>
+
+</body>
+</html>
