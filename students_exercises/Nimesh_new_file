@@ -1,4 +1,0 @@
-print("Commiting new file....")
-for(number in range(5)):
-    print(number)
-
