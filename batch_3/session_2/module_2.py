@@ -8,3 +8,5 @@ def m2():
     mod_1.m1()
 
 m2()
+
+print("__name__ of module_2.py is :: " + __name__)
