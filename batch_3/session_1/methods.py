@@ -18,7 +18,7 @@ def abhishek(a, b):
     return a + b
 
 
-print(logMessage + str(abhishek(1,2)))
+print(logMessage + str(abhishek(a=1,b=2)))
 print(logMessage + str(abhishek(10,20)))
 print(logMessage + str(abhishek(1022,2011)))
 
