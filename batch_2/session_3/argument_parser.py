@@ -10,7 +10,11 @@ args = parser.parse_args()
 
 print((args))
 
-if args.fetchIp:
+fetchIPs = args.fetchIp
+fetchRam = args.fetchRam
+
+
+if fetchIPs:
     # do cloud serach/gather fact....
     servers = read_csv("a.csv", ",")
     ipList = []
@@ -20,7 +24,7 @@ if args.fetchIp:
         ipList.append(server.server_ip)
         print(server.server_ip)
 
-if args.fetchRam:
+if fetchRam:
     # do cloud serach/gather fact....
     servers = read_csv("a.csv", ",")
     ipList = []
