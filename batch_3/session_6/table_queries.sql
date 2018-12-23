@@ -19,3 +19,6 @@ select * from insurance_transaction where transaction_id like "%transaction%"
 select * from insurance_transaction where transaction_id like "f%"
 
 insert into insurance_transaction (transaction_id, csc_transaction_id) values("third_transaction", "csc_transaction")
+
+
+UPDATE insurance_transaction set transaction_id = 'abhishekTomars'

@@ -1,10 +1,11 @@
 import datetime
 import mysql.connector
 
-cnx = mysql.connector.connect(user='root', database='bajaj_insurance', port=3306)
+cnx = mysql.connector.connect(user='root', database='bajaj_insurance', port=3306, host="localhost")
+
 cursor = cnx.cursor()
 
-query = "select * from insurance_transaction"
+query = "select * from insurance_transaction where transaction_id like '%t%'"
 
 
 cursor.execute(query)
