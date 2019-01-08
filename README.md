@@ -17,7 +17,7 @@
 		- tuple
 		- String
 		- int
-	- Loops and condtional statements
+	- Loops and conditional statements
 	- control statements
 	- Modules in python
 	- OOPs in python
