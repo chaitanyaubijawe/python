@@ -1,8 +1,40 @@
-# python 
-## Implement REST API using Flask
-## Pandas
-## Numpy
-## Threads
-## Processes
-
-
+# Python:
+	- Intro
+	- Installation and setup
+	- Variables
+		- local
+		- global
+	- methods
+		- arguments
+		- default arguments
+		- variable arguments
+		- defaults functions
+		- calling functions
+		- returning values from a function
+	- Data types - 2 sessions.
+		- list
+		- dictionary
+		- tuple
+		- String
+		- int
+	- Loops and condtional statements
+	- control statements
+	- Modules in python
+	- OOPs in python
+	- Exception handling
+	- Files handling
+-----------------------------------------------------------
+	- Database connectivity --
+		- Mongo(No sql)
+		- Mysql(SQl)
+	- Threads in python --
+		- benefits
+		- drawback
+	- Processes
+		- Why use processes over thread.
+	- Exploring libraries
+		- Pandas
+		- Numpy
+	- Web Framework
+		- Django
+		- flask(REST)
