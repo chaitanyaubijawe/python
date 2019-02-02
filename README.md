@@ -4,6 +4,12 @@
 	- Variables
 		- local
 		- global
+	- Data types
+		- String
+		- int
+		- list
+		- dictionary
+		- tuple
 	- methods
 		- arguments
 		- default arguments
@@ -11,12 +17,6 @@
 		- defaults functions
 		- calling functions
 		- returning values from a function
-	- Data types - 2 sessions.
-		- list
-		- dictionary
-		- tuple
-		- String
-		- int
 	- Loops and conditional statements
 	- control statements
 	- Modules in python
