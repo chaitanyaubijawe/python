@@ -1,0 +1,5 @@
+CompId,CompName,SectorName,Country,revenue
+1,SG,Finance,India,30000
+2,SG_2,Finance_2,JAPAN,80000
+3,SG_3,Finance_3,US,80000
+4,CodesNBugs,Education,India,12345
