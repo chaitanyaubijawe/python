@@ -1,3 +1,5 @@
+
+
 sg_data_file = open("data.csv", "r")
 data = sg_data_file.read()
 
@@ -12,13 +14,25 @@ sg_data_file.close()
 
 print("After reading the file")
 
-sg_data_file = open("data.csv", "a")
-add_line = "4,CodesNBugs,Education,India,12345"
-sg_data_file.write(add_line)
-sg_data_file.close()
+
+def writeData(fileName, lines=[]):
+    sg_data_file = open(fileName, "a")
+
+    for line in lines:
+        sg_data_file.write(line)
+
+    sg_data_file.close()
 
 
-sg_data_file = open("data.csv", "r")
-data = sg_data_file.read()
-print(data)
-sg_data_file.close()
+def readFile(fileName):
+    sg_data_file = open(fileName, "r")
+    data = sg_data_file.read()
+    print(data)
+    sg_data_file.close()
+
+
+lines = ["4,CodesNBugs,Education,India,12345","5,CodesNBugs,Education,India,12345" "6,CodesNBugs,Education,India,12345"]
+fileName = "data.csv"
+
+writeData(fileName, lines)
+readFile(fileName)
