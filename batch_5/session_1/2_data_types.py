@@ -83,3 +83,21 @@ for item in studentsList:
     print(item)
     print(item["tag"])
 print("&&&&&&&&&&&&&&&&&&&")
+print("&&&&&&&&&&&&&&&&&&&")
+
+# set
+# unique elements....
+
+s = {}
+s = set()
+s = {1,2,34,4,2,1}
+
+l = [1,2,3,4,1]
+print(l)
+
+s = set(l)
+print(s)
+
+s.add(5)
+s.clear()
+##########data types ends here....########

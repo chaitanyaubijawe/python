@@ -74,3 +74,7 @@ for key in d:
 # print(var[ :len(var)])
 
 # Datatype set = {}
+
+
+
+# Write a logic to find/count duplicate values from list.
