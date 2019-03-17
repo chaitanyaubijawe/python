@@ -125,7 +125,7 @@ def m11(*args):
         sum += item
     return sum
 
-print(m11(1,2,3))
+print(m11(1,2,3,4,5,6))
 
 
 print("-------variable arguments...-------")
