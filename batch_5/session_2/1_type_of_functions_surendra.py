@@ -152,3 +152,8 @@ for ecomSite in data:
         print("\t " + str(category))
         for product in siteData[category]:
             print("\t\t " + str(product))
+print("------------------------------")
+
+print(data["Amazon"]["Electronics"])
+print(data["Flipkart"]["Automobile"])
+print(data["Myntra"]["Clothing"])
