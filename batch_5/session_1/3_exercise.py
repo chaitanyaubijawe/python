@@ -70,11 +70,32 @@ d = {"k1":"v1", "k2":"v2"}
 var = ""
 for key in d:
     var = var + key + " : " + d[key] + ","
+# slicing of list/string/tuple..
+print(len(var))
+print(var[15])
+print(var[len(var) -1])
 
-# print(var[ :len(var)])
+print(var[ :len(var) -1])
+
+
 
 # Datatype set = {}
 
+l = [1,2,34,5]
+# l = ["1","2","34","5"]
+s = ""
+for item in l:
+    s += str(item) + "-"
+print(s)
+print(s[ :len(s) -1])
+
+withJoin = "-".join(str(item) for item in range(1,20))
+withJoin = ",".join(str(item + "-" + d[item]) for item in d)
 
 
+print(withJoin)
+
+# for item in range(1,20):
+#     l.append(item)
+# print("-".join(str(item) for item in l))
 # Write a logic to find/count duplicate values from list.

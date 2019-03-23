@@ -154,6 +154,6 @@ for ecomSite in data:
             print("\t\t " + str(product))
 print("------------------------------")
 
-print(data["Amazon"]["Electronics"])
-print(data["Flipkart"]["Automobile"])
-print(data["Myntra"]["Clothing"])
+print(data["Amazon"]["Electronics"][:3])
+print(data["Flipkart"]["Automobile"][:2])
+print(data["Myntra"]["Clothing"][:4])
